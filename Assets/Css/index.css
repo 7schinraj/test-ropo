@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 85%;
+    height: 100%;
+    margin: 30px auto;
+    background-color: rgb(237, 59, 59);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   gap: 30px;
+}
+.product{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: gray;
+    position: relative;
+
+}
+.img{
+    width: 100%;
+    height: 400px;
+}
+.offers{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+.btn-1{
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.hot{
+    width: 50px;
+    height: 30px;
+    background-color: rgb(0, 217, 255);
+    color: white;
+    border: none;
+}
+.pro-ic{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    opacity: 0;
+}
+.img-2{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+}
+.product:hover .pro-ic{
+    opacity: 1;
+    transition: 1s;
+}
+.product:hover .img-2{
+    opacity: 0;
+    transition: 1s;
+}
